@@ -14,4 +14,10 @@ public class HelloController {
     public ResponseEntity<String> hello(@PathVariable String name){
         return ResponseEntity.ok("Hello "+name);
     }
+
+    @GetMapping("bye/{name}")
+    public ResponseEntity<String> bye(@PathVariable String name){
+        return ResponseEntity.ok("Bye "+name);
+    }
+
 }
